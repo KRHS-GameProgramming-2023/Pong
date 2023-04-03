@@ -25,4 +25,15 @@ class Ball():
         height = size [0]
         if not self.didbounceY:
             if self.rect.bottom > height:
+                self.speedy = -self.speedy
+                self.didbounceY = True
+            if self.rect.top < 0:
+                self.speedy = -self.speedy
+                selfdidbounceY = True
+        if not self.didbounceX:
+            if self.rect.right > width:
+                self.speedx = -self.speedx
+                self.didbounceX = True
+            if 
+                
 
