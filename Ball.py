@@ -34,6 +34,12 @@ class Ball():
             if self.rect.right > width:
                 self.speedx = -self.speedx
                 self.didbounceX = True
-            if 
+            if self.rect.left < 0:
+                self.speedX = -self.speedX
+                self.didbounceX = True
+            
+    def  bllcolide (self, other):
+        if self != other:
+            if self.rect.right > 
                 
 
