@@ -40,6 +40,13 @@ class Ball():
             
     def  bllcolide (self, other):
         if self != other:
-            if self.rect.right > 
-                
+            if self.rect.right > other.rect.left:
+                if self.rect.lift < other.rect.right:
+                    if self.rect.top < other.rect.bottom:
+                        if self.rect.bottom > other.rect.top:
+                            if self.getdist (other) < self.rad + other.rad:
+                                if not self.didbounceX:
+                                    self.speedx = -self.speedx
+                                    self.didbounceX = True
+                                if not 
 
