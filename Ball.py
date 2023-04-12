@@ -48,5 +48,16 @@ class Ball():
                                 if not self.didbounceX:
                                     self.speedx = -self.speedx
                                     self.didbounceX = True
-                                if not 
+                                if not self.didbouncey:
+                                    self.speedy = -self.speedy
+                                    self.didbounceY = True
+                                return True
+        return False
+    
+    def getdist (self, other):
+        x1=self.rect.centerx
+        x2=other.rect.centerx
+        y1=self.rect.centery
+        y2=other.rect.centery
+        return math.sqrt ((x2-x1)**2+(y2-y1)**2)
 
